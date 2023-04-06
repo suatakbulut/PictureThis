@@ -13,13 +13,10 @@ As an example, Let's upload the following "test.jpeg" as an example.
 <img src="ReadMe_Files/test.jpeg" style="height:256px" >
 
 First the Yolov3 algorithm will detect the images inside the image, label them and put them inside boxes as follows:
-<img src="ReadMe_Files/test_out.jpeg" style="height:256px" >
+![Alt text](ReadMe_Files/test_out.jpeg?raw=true "Title")
 
 Detection algorithm, in fact, returns a json file similar to:
 
-```python
-Include the json file here 
-```
 Feeding this json into our message text and sending it to writesonic api yields a story, which we then display in our display page. 
 
-### Have fun! 
+### Have fun. 
