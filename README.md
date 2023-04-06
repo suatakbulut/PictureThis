@@ -1,4 +1,5 @@
-# PictureThis
+<h1 style="text-align: center;">PictureThis</h1> 
+
 A webapp that crease a story from a user-provided image. 
 
 Deployed on heroku. (Here is a [link](http://suatakbulut.com/) to the app) 
@@ -9,12 +10,12 @@ Then creates a short tale using the detected objects' information as keywords.
 ## How does it work?
 
 As an example, Let's upload the following "test.jpeg" as an example. 
+
 <img src="ReadMe_Files/test.jpeg" style="height:256px" >
 
-First the Yolov3 algorithm will detect the images inside the image, label them and put them inside boxes as follows:
-<img src="ReadMe_Files/test_out.jpeg" style="height:256px" >
-
+First the objects inside the image are detected using a pre-trained Yolov3 model.  
 Detection algorithm, in fact, returns a json file similar to:
+
 ```python
 detected_objects_details = [
  {'name': 'person',
@@ -32,6 +33,10 @@ detected_objects_details = [
   'percentage_probability': 60.89,
   'box_points': [418, 51, 502, 116]}]
 ```
+
+Using this result, once could draw bounding boxes around the detected objects as follows:
+
+<img src="ReadMe_Files/test_out.jpeg" style="height:256px" >
 
 Feeding this json into our message text and sending it to writesonic api yields a story, which we then display in our display page. Here is an example. 
 
@@ -55,4 +60,4 @@ John couldn't help but join in on the fun. He walked around, taking in the sight
 After a couple of hours, the event came to an end, and the people started returning to their cars to continue their journey. As John got back into his car, he couldn't help but think about how unexpected life could be sometimes. What he thought was going to be an uneventful day turned out to be a memorable experience that he would never forget.
 </p>
 
-## Have fun! 
+<h2 style="text-align: center;">Have fun! </h2> 
