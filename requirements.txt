@@ -18,7 +18,8 @@ opencv-python==4.7.0.72
 Pillow==9.5.0
 requests==2.28.2
 sympy==1.11.1
-http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl
+torch==2.0.0
+torchvision==0.15.1
 typing_extensions==4.5.0
 urllib3==1.26.15
 Werkzeug==2.2.3
