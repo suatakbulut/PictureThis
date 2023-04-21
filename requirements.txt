@@ -1,6 +1,5 @@
--f https://download.pytorch.org/whl/torch_stable.html
-torch==2.0.0+cpu 
-torchvision==0.15.0+cpu
+torch>=1.9.0 --extra-index-url https://download.pytorch.org/whl/cpu 
+torchvision>=0.10.0 --extra-index-url https://download.pytorch.org/whl/cpu
 certifi==2022.12.7
 charset-normalizer==3.1.0
 click==8.1.3
